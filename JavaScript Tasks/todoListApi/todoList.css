@@ -1,0 +1,216 @@
+
+h1 {
+    text-align: center;
+}
+
+#todoForm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    width: 50%;
+    margin-left: 20%;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+#newTodo {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#addBtn {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    flex-direction: row;
+}
+
+
+#todoContainer {
+    max-height: 300px;
+    width: 50%;
+    overflow-y: scroll;
+    margin-left: 20%;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    background-color: white;
+}
+
+#todoList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+#todoList li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* column-gap: 10%; */
+}
+
+#todoList li span{
+    column-gap: 5px;
+}
+
+/* #todoList li div {
+    display: flex;
+    flex-direction: column;
+}
+ */
+
+.edit,
+.delete {
+    /* margin-right: 2px; */
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.delete img{
+    width: 20px;
+    background-color: transparent;
+}
+
+.edit {
+    color: white;
+    position: absolute;
+    right: 16%;
+    background-color: blue;
+    /* border: 1px solid rgb(52, 140, 167); */
+}
+
+.edit img{
+    width: 20px;
+    color: #17c3c9;
+}
+
+
+
+.delete {
+    color: white;
+    /* border: 1px solid black; */
+}
+
+
+.check{
+    position: absolute;
+    left: 62%;
+}
+
+
+.titles{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    position: relative;
+}
+
+.id{
+    /* margin-left: 10px; */
+    top: 10%;
+    font-weight: bold;
+}
+
+.title{
+    position: absolute;
+    left: 10%;
+    font-weight: bold;
+}
+
+.status{
+    position: absolute;
+    margin-left: 60%;
+    font-weight: bold;
+}
+
+.editTitle{
+    position: absolute;
+    margin-left: 80%;
+    /* padding-right: 5px; */
+    font-weight: bold;
+}
+
+.deleteTitle{
+    position: absolute;
+    right: 5px;
+    font-weight: bold;
+}
+
+.titleName{
+    position: absolute;
+    left: 10%
+}
+
+.idValue{
+    margin-top: 2%;
+}
+
+
+/* function editTask(button) {
+    const li = button.parentElement;
+    const taskText = li.querySelector('span').textContent;
+    console.log("task", taskText);
+    
+    const newTask = prompt('Edit your task:', taskText);
+    console.log("new",newTask);
+    
+    if (newTask && newTask.trim()) {
+        li.querySelector('span').textContent = newTask;
+        updateTaskText(taskText, newTask);
+    }
+} */
+
+/* // function editTask(button) {
+    //     const li = button.parentElement;
+    //     const span = li.querySelector('span');
+    //     let newTask = '';
+    //     let taskText='';
+    //     // console.log("task",taskText);
+    //     if (button.textContent === 'Edit') {
+    //         span.contentEditable = true;
+    //         // console.log(newVal.textContent);
+    //         span.focus(); 
+    //         button.textContent = "Save";
+    //         taskText = li.querySelector('span').textContent;
+    //         console.log("task",taskText);
+    //     } else {
+    //         span.contentEditable = false;
+    //         button.textContent = "Edit";
+    //         newTask = li.querySelector('span').textContent;
+            
+    //         // const newTaskText = span.textContent.trim();
+    //         // console.log("newatsk",newTaskText);
+            
+    //         // if (newTaskText) {
+    //         //     const taskIndex = Array.from(element.parentNode.children).indexOf(element);
+    //         //     const storedUserData = JSON.parse(localStorage.getItem(currentUser));
+    //         //     storedUserData.tasks[taskIndex].task = newTaskText;
+    //         //     localStorage.setItem(currentUser, JSON.stringify(storedUserData));
+    //         // }
+    //     }
+    //     console.log("new",newTask);
+    //     if (newTask) {
+    //         li.querySelector('span').textContent = newTask;
+    //         // console.log(li.querySelector('span').textContent);
+            
+    //         updateTaskText(taskText, newTask);
+    //     }
+    // } */

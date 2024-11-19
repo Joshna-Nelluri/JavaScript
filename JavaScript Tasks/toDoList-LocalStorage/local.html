@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register Pop-up with To-Do List</title>
+    <link rel="stylesheet" href="local.css">
+</head>
+<body>
+ 
+    <div id="loginPopup" class="popup active">
+        <h2>Login</h2>
+        <div class="form-group">
+            <label for="loginUsername">Username: <input type="text" id="loginUsername"></label>
+            <div class="error" id="loginUsernameError"></div>
+        </div>
+        <div class="form-group">
+            <label for="loginPassword">Password: <input type="password" id="loginPassword"></label>
+            <div class="error" id="loginPasswordError"></div>
+        </div>
+        <div class="buttons">
+            <button id="registerBtn1">Register</button>
+            <button id="loginBtn1">Login</button>
+        </div>
+    </div>
+
+    <div id="registerPopup" class="popup">
+        <h2>Register</h2>
+        <div class="form-group">
+            <label for="registerUsername">Username: <input type="text" id="registerUsername"></label>
+            <div class="error" id="registerUsernameError"></div>
+        </div>
+        <div class="form-group">
+            <label for="registerPassword">Password: <input type="password" id="registerPassword"></label>
+            <div class="error" id="registerPasswordError"></div>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword" id="cnfmPassword">Confirm Password: <input type="password" id="confirmPassword"></label>
+            <div class="error" id="confirmPasswordError"></div>
+        </div>
+        <div class="buttons">
+            <button id="loginBtn2">Login</button>
+            <button id="registerBtn2">Register</button>
+        </div>
+    </div>
+ 
+    
+
+    <div class="todoapp">
+        <h2>To-Do List Demo</h2>
+        <div class="row">
+            <input type="text" id="todoInput" placeholder="Add your text..." class="todoInput">
+            <button id="add">Add</button>
+        </div>
+        <div>
+            <div class="titles">
+                <div class="tasknameTitle">TaskName</div>
+                <div class="completeTitle">Completed</div>
+                <div class="editTitle">Edit</div>
+                <div class="deleteTitle">Delete</div>
+            </div>
+            <ul id="todoList">
+               <!--  <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+ 
+    <script src="local.js"></script>
+ 
+</body>
+</html>
+ 

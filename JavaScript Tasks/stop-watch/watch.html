@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop-watch Timer</title>
+    <link rel="stylesheet" href="watch.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock">
+            <div class="time">
+                <span id="hour">00:</span>
+
+                <span id="minutes">00:</span>
+
+                <span id="seconds">00:</span>
+
+                <span id="milliseconds">00</span>
+            </div>
+
+        </div>
+        <!-- <p class="timer" id="timer">25:00</p> -->
+        <div class="button-wrapper">
+            <button id="start">Start</button>
+            <button id="split" disabled>Split</button>
+            <button id="reset" disabled>Reset</button>
+        </div>
+
+        <div class="history">
+            <!-- <p id="split-text"></p> -->
+             <ul id="split-text"></ul>
+        </div>
+    </div>
+
+    <script src="watch.js"></script>
+</body>
+
+</html>

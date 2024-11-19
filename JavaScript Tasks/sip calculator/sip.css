@@ -1,0 +1,149 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    /* border: 5px solid black; */
+}
+
+h2{
+    text-align: center;
+}
+
+.sip{
+    width: 50%;
+    height: 700px;
+    border: 1px solid black;
+    margin-left: 25%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.buttons{
+    margin-top: 0;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+  
+.sip-values{
+    display: flex;
+    flex-direction: row;
+}
+
+input[type="range"]{
+    width: 100%;
+}
+
+
+.inputs{
+    position: absolute;
+    width: 65%;
+    height: 700px;
+    /* border: 1px solid black; */
+    padding: 10px;
+    top: 5%;
+}
+
+.inputs div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2%;
+}
+
+.inp-values{
+    background-color: rgb(206, 232, 206);
+    
+    /* border-radius: 10px; */
+    /* width: 80px; */
+}
+
+input[type="range"]{
+    display: block;
+}
+
+div label{
+    font-weight: 500;
+}
+
+div .input{
+   margin-right: 10%;
+   margin: 5px;
+   width: 100px;
+   height: 20px;
+   border: none;
+   outline: none;
+   background-color: rgb(206, 232, 206);
+}  
+
+.total{
+    position: absolute;
+    margin-top: 40%;
+    padding: 20px;
+    width: 65%;
+}
+
+.calc h4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.calc h4 p{
+    margin-left: 4%; 
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0%;
+} 
+
+div .input1{
+   width: 100px;
+   height: 20px;
+}
+
+.rupee{
+    width: 20px;
+    height: 20px;
+    margin-left: 10%;
+    margin-top: 1%;
+} 
+
+.expected-input{
+    margin-left: 10px;
+}
+
+#invest-text{
+    text-wrap: wrap;
+}  
+
+
+
+
+
+.progress-circle{
+    position: relative;
+}
+
+
+
+svg {
+    position: absolute;
+    left: 600px;
+    fill: none;
+    stroke-width: 30;
+}
+
+
+circle {
+    position: absolute;
+    top: -20%; 
+    fill: none;
+    stroke: rgb(24, 24, 228);
+    stroke-width: 30;
+    stroke-dasharray: 440; 
+    stroke-dashoffset: 200; 
+    transition: stroke-dashoffset 0.5s ease;
+}
+

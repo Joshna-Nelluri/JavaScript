@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: salmon;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 60px;
+    z-index: 2;
+}
+
+.clock{
+    background-color: lightgray;
+    width: 350px;
+    height: 350px;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: 5px solid darkgray;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.numbers div, .numbers1 div, .numbers2 div{
+    position: absolute;
+    font-size: 27px;
+    font-weight: bold;
+    color: lightgoldenrodyellow;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.twelve, .twelve1, .twelve2{
+    top: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.three, .three1, .three2{
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+}
+
+.six, .six1, .six2{
+    left: 50%;
+    bottom: 6px;
+    transform: translateX(-50%);
+}
+
+.nine, .nine1, .nine2{
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrows, .arrows1, .arrows2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrows::before, .arrows1::before, .arrows2::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: flex;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+    z-index: 4;
+}
+
+.arrows div, .arrows1 div, .arrows2 div{
+    background-color: white;
+    width: 7px;
+    position: absolute;
+    height: 120px;
+    transform-origin: bottom center;
+    bottom: 50%;
+    z-index: 3;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.arrows .hour, .arrows1 .hour1, .arrows2 .hour2{
+    height: 80px;
+    /* transform: rotate(30deg); */
+}
+
+.arrows .second, .arrows1 .second1, .arrows2 .second2{
+    background-color: goldenrod;
+    /* transform: rotate(250deg); */
+}
+
+
+.clock1{
+    background-color: lightgray;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid darkgray;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+    margin-right: 20px;
+}
+
+.clock2{
+    background-color: lightgray;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid darkgray;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+#text{
+    padding-top: 10%;
+    margin-left: 45%;
+}
+

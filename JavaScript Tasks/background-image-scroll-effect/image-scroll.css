@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* .bg-image{
+    height: 100vh;
+    width: 100%;
+    background: url("https://media.istockphoto.com/id/1534040386/photo/an-outdoor-bamboo-gazebo-nestled-amidst-lush-greenery-offering-serene-relaxation-after-a.webp?a=1&b=1&s=612x612&w=0&k=20&c=wvv6Zg47MRbv_wpsY5OnckB51nIWiuPrGKFxdctxCsM=");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 160%;
+}  */
+
+
+
+.split{
+    width: 50%;
+    height: 100%;
+    top: 0;
+}
+
+.split.left{
+    position: absolute;
+    left: 0; 
+    background-image: url("https://images.unsplash.com/photo-1725714834562-8095c2038f0c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+}
+
+.split.right{
+    position: absolute;
+    right: 0;
+    background-image: url("https://images.unsplash.com/photo-1725900736766-e168d39a5a94?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+}
+
+.active-left .left{
+    width: 100%;
+}
+
+.active-left .right{
+    width: 25%;
+}
+
+.active-right .left{
+    width: 25%;
+}
+
+.active-right .right{
+    width: 75%;
+}
+
+.left, .right{
+    transition: width 2s ;
+    width: 50%;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.container{
+    padding: 100px;
+}
+
+.container1{
+    margin-top: 40%;
+    padding: 200px;
+}
+
+
+p{
+    color: grey;
+}
+
+@media (max-width:500px){
+    .container {
+        padding: 10px;
+    }
+} 
+
+

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sip.css">
+    <title>Sip Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>SIP Calculator</h2>
+        <div class="sip">
+            <div class="buttons">
+                <button id="sip">SIP</button>
+                <button id="lumpsum">Lumpsum</button>
+            </div>
+            <div class="inputs">
+                <div>
+                    <label>Monthly investment</label>
+                    <div class="inp-values"><img
+                            src="https://cdn4.iconfinder.com/data/icons/tabler-vol-3/24/currency-rupee-64.png"
+                            class="rupee">
+                        <input class="input"  type="number" id="amount" min="500" max="1000000"
+                            value="10000">
+                    </div>
+                </div><br><br>
+                <input type="range" min="500" max="1000000" value="1" step="1" class="monthlyInvRange"><br><br>
+                <div>
+                    <label>Expected return rate(p.a)</label>
+                    <div class="inp-values"><input class="input expected-input" type="number"
+                            id="interest" min="1" max="100" value="10" step=".1">%</div>
+                </div><br><br>
+                <input type="range" min="1" max="30" value="1" step=".1" class="expReturnRange"><br><br>
+                <div>
+                    <label>Months to pay</label>
+                    <div class="inp-values"><input class="input" type="number"  id="years" min="1" max="48" value="1">Yr</div>
+                </div><br><br>
+                <input type="range" min="1" max="40" value="1" step="1" class="monthsToPayRange"><br><br>
+                
+            <div class="progress-circle">
+                <svg width="300" height="300" viewBox="0 0 300 300">
+                    <circle id="progress" cx="180" cy="180" r="70" />
+                    <!-- <circle cx="100" cy="100" r="70" stroke-width="30" stroke="#ddd" fill="none"></circle>
+                    <circle cx="100" cy="100" r="70" stroke-width="30" stroke="#4caf50" id="progress"></circle> -->
+                </svg>
+                <div class="progress-text">0%</div>
+            </div>
+            </div>
+            
+            <div class="total">
+                <div class="calc">
+                    <h4 id="invest-text">Invested amount: <p class="invested-amt" id="invested-amt"><img src="https://cdn4.iconfinder.com/data/icons/tabler-vol-3/24/currency-rupee-64.png" class="rupee">6000</p>
+                    </h4>
+                </div>
+                <div class="calc">
+                    <h4>Est. returns: <p class="est-returns" id="est-returns"><img src="https://cdn4.iconfinder.com/data/icons/tabler-vol-3/24/currency-rupee-64.png" class="rupee">33</p>
+                    </h4>
+                </div>
+                <div class="calc">
+                    <h4>Total value: <p class="total-value" id="total-value"><img src="https://cdn4.iconfinder.com/data/icons/tabler-vol-3/24/currency-rupee-64.png" class="rupee">6033</p>
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="sip.js"></script>
+</body>
+
+</html>

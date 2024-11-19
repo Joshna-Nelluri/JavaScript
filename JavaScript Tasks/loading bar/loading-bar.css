@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    /* background-color: black; */
+    color: lightgray;
+    font-family: cursive;
+}
+
+.container{
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+.counter{
+    font-size: 40px;
+}
+
+.loading-bar-back{
+    position: absolute;
+    height: 8px;
+    background-color: lightgray;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+}
+
+.loading-bar-front{
+    position: absolute;
+    height: 8px;
+    background-color: orangered;
+    border-radius: 5px;
+    width: 0%;
+    border: none;
+}
+
+.btn{
+    margin-top: 30px;
+    display: flex;
+}
+
+#reset{
+    width: 100px;
+    height: 50px;
+    margin-left: 20%;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+/* .btn .play{
+    background-color: white;
+    background-image: url("https://cdn0.iconfinder.com/data/icons/zondicons/20/play-64.png");
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+} */
+
+/* .btn2 .play{
+    background-image: url("https://cdn2.iconfinder.com/data/icons/multimedia-26/24/multimedia-52-64.png");
+} */

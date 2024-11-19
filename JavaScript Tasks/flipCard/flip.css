@@ -1,0 +1,118 @@
+
+#main-content{
+    display: flex;
+    gap: 15px;
+}
+
+.popup{
+    display: block;
+    margin: 5px;
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    margin: 5% auto;
+    position: absolute;
+    background-color: white;
+    color: black;
+    left: 50%;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.btn{
+    margin-top: 5%;
+    margin-left: 45%;
+}
+
+.flip-game{
+    display: grid;
+    gap: 20px;
+}
+
+.status{
+    display: flex;
+    gap: 15px;
+}
+
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 10px;
+    margin-left: 40%;
+    margin-top: 10%;
+    background-color: blue;
+    width: 620px;
+    position: relative;
+}
+
+.card {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    cursor: pointer;
+    position: relative;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transition: transform 0.5s; */
+}
+
+.card{
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.card.enabled{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.card.flipped {
+    background-color: transparent;
+}
+
+.card.flipped img {
+    display: block;
+    animation-name: example;
+    animation-duration: 0.4s;
+}
+
+
+
+.alert{
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(91, 142, 158);
+    color: black;
+    /* border: 1px solid black; */
+    padding: 10px;
+    border-radius: 10px;
+    top: 5px;
+    margin-left: 50%;
+    display: none;
+}
+
+@keyframes example {
+    0%   {
+        /* background-color: aqua; */
+          /* filter: brightness(1.5); */
+          transform: rotateY(0deg);
+        }
+    100% {
+        /* background-color: green; */
+          /* filter: brightness(0); */
+          transform: rotateY(180deg);
+    }
+}
+
